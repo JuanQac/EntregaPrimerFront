@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link href="common-styles.css" rel="stylesheet">
+    <link href="forms-styles.css" rel="stylesheet">
+</head>
+<body>
+    <div id="logoContainerForm">
+    <i class="fas fa-film"></i>
+    <a class='navbar-brand' href='/'>
+        <span>CAC-Movies</span>
+    </a>
+    </div>
+    <div id="formSection">
+
+    <form action="" id="registerForm">
+        <h1>Registro</h1>
+        <input type="text" placeholder="Ingresá tu nombre" name="name" id="nameInput" required>
+
+        <input type="text" placeholder="Ingresá tu apellido" name="lastName" id="lastNameInput" required>
+
+        <input type="email" placeholder="Ingresá tu email" name="email" id="emailInput" required>
+
+        <input type="password" placeholder="Creá una contraseña" name="password" id="passwordInput" required>
+
+        <input type="date" placeholder="Fecha de Nacimiento (día/mes/año)" name="nacimiento" id="nacimientoInput" required>
+
+        <select name="pais" id="paisSelect" required>
+        <option value="">País</option>
+        <option value="AR">Argentina</option>
+        <option value="ES">España</option>
+        <option value="UR">Uruguay</option>
+        <option value="ME">México</option>
+        <option value="CH">Chile</option>
+        <option value="BR">Brasil</option>
+        </select>
+
+        <div id="termConds">
+        <input id="termsCheck" type="checkbox" id="termCondsInput">
+        <label id="termCondsLabel" for="terminos">Acepto los Términos y Condiciones</label>
+        </div>
+        <button type="submit" class="registerbtn">Registrarme</button>
+        <a href="">Necesitas ayuda?</a>
+    </form>
+    </div>
+
+
+   
+    <script src="https://kit.fontawesome.com/7e976723c9.js" crossorigin="anonymous"></script>
+
+    <script defer src="register.js"></script>
+</body>
+</html>
