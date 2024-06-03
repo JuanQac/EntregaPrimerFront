@@ -37,8 +37,6 @@
     </div>
   </header>
   
-
-
   <section id="bannerContainer" data-aos="zoom-in" data-aos-duration="1500">
       <h1>Películas y series ilimitadas en un solo lugar.</h1>
       <h2>Disfruta donde quieras.</h2>
@@ -52,129 +50,23 @@
   <section id="searcherContainer" data-aos="fade-up" data-aos-delay="120" data-aos-duration="2200">
     <div class="input-group">
       <h1>¿Qué estás buscando para ver?</h1>
-      <input type="search" class="form-control rounded" placeholder="Película o Serie..." aria-label="Search" aria-describedby="search-addon" />
+      <input type="text" id="searchInput" class="form-control rounded" placeholder="Película o Serie..." aria-label="Search" aria-describedby="search-addon" />
       <button class="whiteHover" id="searchButton">Buscar</button>
     </div>
   </section>
 
-  <hr>
+  
 
   <section id="moviesSection" data-aos="fade-up" data-aos-delay="120" data-aos-duration="1200">
     <h1>Tendencias</h1>
     <div id="moviesGrid">
-        
-      <div class="movie">
-            <img src="https://www17.pelisplushd.to/poster/ghostbusters-apocalipsis-fantasma-thumb.jpg" alt="Ghostbusters"> 
-        <div class="movieTittle">
-          <h5>Ghostbusters</h5>
-        </div>
-      </div>
-
-      <div class="movie">
-        <a href='/Info-movie.html'>
-          <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/qhb1qOilapbapxWQn9jtRCMwXJF.jpg" alt="Wonka">
-        </a>
-        <div class="movieTittle">
-          <h5>Wonka</h5>
-        </div>
-     </div>
-
-      <div class="movie">
-        <a href='/Info-movie.html'>
-          <img src="https://www17.pelisplushd.to/poster/descansar-en-paz-thumb.jpg" alt="Descanzar en paz">
-        </a>
-        <div class="movieTittle">
-          <h5>Descanzar en paz</h5>
-        </div>
-      </div>
-
-      <div class="movie">
-          <a href='/Info-movie.html'>
-            <img src="https://www17.pelisplushd.to/poster/el-duro-359410-thumb.jpg" alt="El Duro">
-          </a>
-          <div class="movieTittle">
-            <h5>El Duro</h5>
-          </div>
-      </div>
-
-      <div class="movie">
-        <a href='/Info-movie.html'>
-          <img src="https://image.tmdb.org/t/p/w500//AgHbB9DCE9aE57zkHjSmseszh6e.jpg" alt="Damsel">
-        </a>
-        <div class="movieTittle">
-          <h5>Damsel</h5>
-        </div>
-     </div>
-
-      <div class="movie">
-          <a href='/Info-movie.html'>
-            <img src="https://image.tmdb.org/t/p/w500//1pdfLvkbY9ohJlCjQH2CZjjYVvJ.jpg" alt="Dune: Parte Dos">
-          </a>
-          <div class="movieTittle">
-            <h5>Dune: Parte Dos</h5>
-          </div>
-      </div>
-
-      <div class="movie">
-          <a href='/Info-movie.html'>
-            <img src="https://image.tmdb.org/t/p/w500//pgqgaUx1cJb5oZQQ5v0tNARCeBp.jpg" alt="Godzilla vs Kong">
-          </a>
-          <div class="movieTittle">
-            <h5>Godzilla vs Kong</h5>
-          </div>
-      </div>
-
-      <div class="movie">
-        <a href='/Info-movie.html'>
-          <img src="https://www17.pelisplushd.to/poster/volver-al-futuro-thumb.jpg" alt="Volver al futuro">
-        </a>
-        <div class="movieTittle">
-          <h5>Volver al futuro</h5>
-        </div>
+      
     </div>
-
-      <div class="movie">
-          <a href='/Info-movie.html'>
-            <img src="https://www17.pelisplushd.to/poster/volver-al-futuro-2-thumb.jpg" alt="Volver al futuro 2">
-          </a>
-          <div class="movieTittle">
-            <h5>Volver al futuro 2</h5>
-          </div>
-      </div>
-
-      <div class="movie">
-          <a href='/Info-movie.html'>
-            <img src="https://www17.pelisplushd.to/poster/volver-al-futuro-3-thumb.jpg" alt="Volver al futuro 3">
-          </a>
-          <div class="movieTittle">
-            <h5>Volver al futuro 3</h5>
-          </div>
-      </div>
-
-      <div class="movie">
-          <a href='/Info-movie.html'>
-            <img src="https://www17.pelisplushd.to/poster/contagion-of-fear-thumb.jpg" alt="Contagion of Fear">
-          </a>
-          <div class="movieTittle">
-            <h5>Contagion of Fear</h5>
-          </div>
-      </div>
-
-      <div class="movie">
-          <a href='/Info-movie.html'>
-            <img src="https://www17.pelisplushd.to/poster/the-shamrock-spitfire-thumb.jpg" alt="The Shamrock Spitfire">
-          </a>
-          <div class="movieTittle">
-            <h5>The Shamrock Spitfire</h5>
-          </div>
-      </div>
-
-   </div>
     <div id="pagesButtons">
-      <button class="whiteHover">Anterior</button>
-      <button class="whiteHover">Siguiente</button>
+      <button id="prevPage" class="whiteHover">Anterior</button>
+      <button id="nextPage" class="whiteHover">Siguiente</button>
     </div>
- </section>
+  </section>
 
   <footer>
     <div class="footerBtns">
@@ -197,5 +89,7 @@
   </script>
  
   <script src="https://kit.fontawesome.com/7e976723c9.js" crossorigin="anonymous"></script>
+  <!-- Las películas obtenidas de la API -->
+  <script src="movies.js"></script>
  </body>
 </html>
